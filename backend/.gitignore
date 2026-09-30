@@ -1,3 +1,14 @@
 node_modules/
 .env
 .DS_Store
+# Chặn toàn bộ thư mục thư viện ở cả frontend và backend
+**/node_modules/
+
+# Chặn toàn bộ file biến môi trường chứa mật khẩu DB, JWT Secret
+**/.env
+**/.env.*
+
+# File rác hệ thống
+.DS_Store
+dist/
+build/

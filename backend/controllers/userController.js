@@ -37,15 +37,5 @@ const getUserById = async (req, res) => {
         res.status(500).json({ message: "Server error", error: error.message});
     }
 };
-// @desc    Get user by ID
-// @route   Get /api/users/:id
-// @access  Private (Admin)
-const deleteUser = async (req, res) => {
-    try{
 
-    } catch (error) {
-        res.status(500).json({ message: "Server error", error: error.message});
-    }
-}
-
-module.exports = { getUsers, getUserById, deleteUser}
+module.exports = { getUsers, getUserById}
