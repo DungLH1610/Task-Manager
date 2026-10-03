@@ -4,23 +4,24 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './pages/Auth/login.jsx';
-import SignUp from './pages/Auth/SignUp.jsx';
-import Dashboard from './pages/Admin/Dashboard.jsx';
-import ManageTasks from './pages/Admin/ManageTasks.jsx';
-import CreateTask from './pages/Admin/CreateTask.jsx';
-import ManageUsers from './pages/Admin/ManageUsers.jsx';
+import Login from './pages/Auth/Login';
+import SignUp from './pages/Auth/SignUp';
+import Dashboard from './pages/Admin/Dashboard';
+import ManageTasks from './pages/Admin/ManageTasks';
+import CreateTask from './pages/Admin/CreateTask';
+import ManageUsers from './pages/Admin/ManageUsers';
 
-import UserDashboard from './pages/User/UserDashboard.jsx';
-import MyTasks from './pages/User/MyTasks.jsx';
-import ViewTaskDetails from './pages/User/ViewTaskDetails.jsx';
-import PrivateRoute from './routes/PrivateRoute.jsx';
+import UserDashboard from './pages/User/UserDashboard';
+import MyTasks from './pages/User/MyTasks';
+import ViewTaskDetails from './pages/User/ViewTaskDetails';
+import PrivateRoute from './routes/PrivateRoute';
 
+// Router Routes and Route khac gi nhau
 // Connect app to detailed routes folder in src
 const App = () => {
   return (
     <div>
-      <Router> // Router Routes and Route khac gi nhau
+      <Router> 
         <Routes>
           <Route path="/login" element={<Login />} /> 
           <Route path="/signUp" element={<SignUp />} /> 
